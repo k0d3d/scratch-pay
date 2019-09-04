@@ -1,0 +1,42 @@
+// Import Custom SB Admin 2 Variables (Overrides Default Bootstrap Variables)
+@import "variables.scss";
+
+// Import Bootstrap
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+// Import Custom SB Admin 2 Mixins and Components
+@import "mixins.scss";
+@import "global.scss";
+@import "utilities.scss";
+
+// Custom Components
+@import "dropdowns.scss";
+@import "navs.scss";
+@import "buttons.scss";
+@import "cards.scss";
+@import "charts.scss";
+@import "login.scss";
+@import "error.scss";
+@import "footer.scss";
+
+.toggled .sidebar-brand__logo--full {
+  display: none;
+}
+
+.toggled .sidebar-brand__logo--paw {
+  width: 55px;
+  display: block;
+}
+.sidebar-brand__logo--full {
+  width: 150px;
+}
+.sidebar-brand__logo--paw {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar.toggled .nav-item .nav-link span {
+      font-size: .95rem;
+      display: block;
+  }
+}

@@ -1,0 +1,43 @@
+✔ Setup Dev env ( Had to work on a live server while i installed vue from vue -cli, node-sass had compile issues ) @started(19-09-04 11:25) @done(19-09-04 11:57) @lasted(32m56s)
+✔ Strip all useless elements and components from the interface, use Scratchpay branding and leave only relevant layouts @started(19-09-04 13:08) @done(19-09-04 13:35) @lasted(27m11s)
+- User {
+   id, 
+   email, 
+      editable()
+   first name, 
+   last name, 
+   role (doctor, admin, accountant) and 
+   status 
+      editable(active, inactive).
+
+}
+
+Optional bonus goals
+
+Edit role
+Edit first name and last name
+Add basic authentication system
+UI tests
+Document the code using JSDoc or any other similar documentation system
+
+
+Requirements
+
+List of existing users
+Add new users
+Remove existing users
+Edit existing users
+No duplicate emails are allowed
+The Scratchpay logo and/or paw symbol must be present in the interface
+Colors should match the included guidelines
+
+Colors
+
+Primary SCRATCHPAY BLUE: HEX #245CA6, R 36 G 92 B 166
+Primary SCRATCHPAY LIGHT BLUE: HEX #A3C7ED, R 163 G 199 B 237
+Primary SCRATCHPAY COBALT: HEX #293D99, R 41 G 61 B 153
+Primary SCRATCHPAY NAVY: HEX #212445, R 33 G 36 B 69
+Secondary SCRATCHPAY CORAL: HEX #F56E57, R 254 G 110 B 87
+Secondary SCRATCHPAY YELLOW: HEX #FF5B81C, R 245 G 184 B 28
+Secondary SCRATCHPAY BEIGE: HEX #FAF0E3, R 251 G 83 B 115
+Secondary SCARTCHPAY DARK GRAY: HEX #241F21, R 36 G 31 B 33
