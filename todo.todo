@@ -1,16 +1,18 @@
 ✔ Setup Dev env ( Had to work on a live server while i installed vue from vue -cli, node-sass had compile issues ) @started(19-09-04 11:25) @done(19-09-04 11:57) @lasted(32m56s)
 ✔ Strip all useless elements and components from the interface, use Scratchpay branding and leave only relevant layouts @started(19-09-04 13:08) @done(19-09-04 13:35) @lasted(27m11s)
-- User {
-   id, 
-   email, 
-      editable()
-   first name, 
-   last name, 
-   role (doctor, admin, accountant) and 
-   status 
-      editable(active, inactive).
+☐ Use dummy API to collect user data
+   ✔ Run code in browser that supports native fetch() @started(19-09-04 15:19) @done(19-09-04 15:43) @lasted(24m21s)
+☐ User table with the below columns and behaviors { @started(19-09-04 15:43)
+      id, 
+      email, 
+         editable()
+      first name, 
+      last name, 
+      role (doctor, admin, accountant) and 
+      status 
+         editable(active, inactive).
 
-}
+   }
 
 Optional bonus goals
 
