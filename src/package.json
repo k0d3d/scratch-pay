@@ -39,6 +39,7 @@
         "jquery.easing": "^1.4.1"
     },
     "devDependencies": {
+        "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony",
         "browser-sync": "2.26.7",
         "del": "4.1.1",
         "gulp": "4.0.2",

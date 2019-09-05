@@ -16,7 +16,18 @@ $gray-800: #5a5c69 !default;
 $gray-900: #3a3b45 !default;
 $black: #000 !default;
 
-$blue: #4e73df !default;
+
+$primary-blue:  #245CA6;
+$primary-light-blue:  #A3C7ED;
+$primary-cobalt:  #293D99;
+$primary-navy:  #212445;
+$secondary-coral:  #F56E57;
+$secondary-yellow: #FF5B81C;
+$secondary-beige:  #FAF0E3;
+$secondary-dark-gray:  #241F21;
+
+
+$blue: $primary-blue !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
@@ -26,7 +37,6 @@ $yellow: #f6c23e !default;
 $green: #1cc88a !default;
 $teal: #20c9a6 !default;
 $cyan: #36b9cc !default;
-
 // Custom Colors
 $brand-google: #ea4335;
 $brand-facebook: #3b5998;

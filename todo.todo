@@ -1,37 +1,38 @@
+Start:
 ✔ Setup Dev env ( Had to work on a live server while i installed vue from vue -cli, node-sass had compile issues ) @started(19-09-04 11:25) @done(19-09-04 11:57) @lasted(32m56s)
 ✔ Strip all useless elements and components from the interface, use Scratchpay branding and leave only relevant layouts @started(19-09-04 13:08) @done(19-09-04 13:35) @lasted(27m11s)
-☐ Use dummy API to collect user data
+✔ Use dummy API to collect user data @done(19-09-05 08:12)
    ✔ Run code in browser that supports native fetch() @started(19-09-04 15:19) @done(19-09-04 15:43) @lasted(24m21s)
 ☐ User table with the below columns and behaviors { @started(19-09-04 15:43)
-      id, 
-      email, 
-         editable()
-      first name, 
-      last name, 
-      role (doctor, admin, accountant) and 
-      status 
-         editable(active, inactive).
+      ✔ id, @done(19-09-04 16:14)
+      ✔ email, @done(19-09-04 16:14)
+         ✔ editable() @started(19-09-04 16:31) @done(19-09-04 17:00) @lasted(29m38s)
+      ✔ first name, @done(19-09-04 16:14)
+      ✔ last name, @done(19-09-04 16:14)
+      ✔ role (doctor, admin, accountant) and @done(19-09-05 08:48)
+      ✔ status @done(19-09-04 16:14)
+         ✔ editable(active, inactive). @done(19-09-05 08:49)
 
    }
 
 Optional bonus goals
 
-Edit role
-Edit first name and last name
-Add basic authentication system
+✔ Edit role @done(19-09-05 08:49)
+✔ Edit first name and last name @done(19-09-05 08:49)
+✔ Add basic authentication system @done(19-09-05 09:36)
 UI tests
 Document the code using JSDoc or any other similar documentation system
 
 
 Requirements
 
-List of existing users
-Add new users
-Remove existing users
-Edit existing users
-No duplicate emails are allowed
-The Scratchpay logo and/or paw symbol must be present in the interface
-Colors should match the included guidelines
+✔ List of existing users @done(19-09-04 16:14)
+✔ Add new users @started(19-09-05 09:46) @done(19-09-05 09:55) @lasted(9m4s)
+☐ Remove existing users 
+✔ Edit existing users @done(19-09-05 09:46)
+☐ No duplicate emails are allowed
+✔ The Scratchpay logo and/or paw symbol must be present in the interface @started(19-09-05 09:22) @done(19-09-05 09:55) @lasted(33m14s)
+✔ Colors should match the included guidelines @started(19-09-04 16:18) @done(19-09-04 16:22) @lasted(4m)
 
 Colors
 
