@@ -70,3 +70,8 @@ input.inline-edit:focus{
   color: $secondary-coral
 }
 
+.editable .btn:hover {
+  border: solid 1px green;
+  cursor: pointer;
+}
+

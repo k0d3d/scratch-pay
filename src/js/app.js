@@ -14,6 +14,11 @@ var app = new Vue({
       role: ''
     }
   }),
+  /**
+   *  Run a RESTful fetch to get all the
+   * latest active users.
+   * @returns {} void
+   */
   mounted: function () {
     let self = this
     this.getSomeUsers()
@@ -28,22 +33,41 @@ var app = new Vue({
     getSomeUsers () {
       return fetch('https://reqres.in/api/users')
     },
-    addUser (body) {
+    /**
+     * Create a new user on the latest active users table
+     * 
+     * @param { Object } body An object with the required properties
+     * and values to create a new user. 
+     */
+    addUser () {
+      if (this.users.find(user => user.email === this.form.email)) return alert(`This user already exists`)
+      let body = this.form
       return fetch('https://reqres.in/api/users', {
         method: 'POST',
         body
       })
         .then(resp => resp.json())
         .then(resp => {
-          this.users.push(resp)
+          this.users.push({ id: resp.id, ...this.form })
         })
     },
+    /**
+     * Removes a user from the list of users
+     * on the active users table.
+     * @param {String} userId a valid user id
+     */
     removeUser (userId) {
       this.users = this.users.filter(user => user.id !== userId)
     },
+    /**
+     * toggles showing the add user card feature
+     */
     showAddUsers () {
       this.addUserIsShown = !this.addUserIsShown
     },
+    /**
+     * processes user login
+     */
     login () {
       this.user = {
         'username': this.email_address

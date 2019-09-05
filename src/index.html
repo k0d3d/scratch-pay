@@ -340,30 +340,30 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="p-5">
-                          <div class="text-center">
-                            <span class="p-1 mb-2 d-block">
-                              <img src="./img/paw_symbol.png" alt="" class="w-25">
-                            </span>
-                            <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
-                          </div>
+                         
                           <form class="user">
                             <div class="form-group">
-                              <input v-model="email_address" type="email" class="form-control form-control-user"
-                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                placeholder="Enter Email Address...">
+                              <input v-model="form.first_name" type="text" class="form-control form-control-user"
+                                id="" placeholder="Enter First Name">
                             </div>
                             <div class="form-group">
-                              <input type="password" class="form-control form-control-user" id="exampleInputPassword"
-                                placeholder="Password">
+                              <input v-model="form.last_name" type="email" class="form-control form-control-user"
+                                id="" placeholder="Enter Last Name">
                             </div>
                             <div class="form-group">
-                              <div class="custom-control custom-checkbox small">
-                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                <label class="custom-control-label" for="customCheck">Remember Me</label>
-                              </div>
+                              <input v-model="form.email" type="email" class="form-control form-control-user"
+                                id="" placeholder="Enter Email Address...">
                             </div>
-                            <button class="btn btn-primary btn-user btn-block" v-on:click.stop.prevent="login">
-                              Login
+                            <div class="form-group">
+                              <select name="user_role" id="" class="form-control" placeholder="Select a role" v-model="form.role">
+                                <option value="Doctor">Doctor</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Accountant">Accountant</option>
+                              </select>
+                            </div>
+                            
+                            <button class="btn btn-primary btn-user btn-block" v-on:click.stop.prevent="addUser">
+                              Add User
                             </button>
                             <hr>
                           </form>
@@ -421,7 +421,15 @@
                         </tfoot>
                         <tbody>
                           <tr v-for="user in users" v-bind:key="user.id">
-                            <td>{{user.id}}</td>
+                            <td>
+                              <div class="editable" v-if="isEditable" style="
+                                  float: left;
+                                  margin-right: 6px;
+                                ">
+                                <button v-on:click="removeUser(user.id)" class="btn btn-sm btn-circle"><i class="fa fa-trash"></i></button>
+                              </div>  
+                              {{user.id}}
+                            </td>
                             <td>
                               <div>
                                 <span v-if="!isEditable">
